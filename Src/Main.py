@@ -41,6 +41,7 @@ def ActionYes():
     global menuYes
     menuYes = tk.Toplevel()
     menuYes.title("Jumping Love")
+    menuYes.configure(bg="#FFDEE9")
     menuYes.geometry("300x200")
     menuYes.resizable(False, False)
     
@@ -49,14 +50,15 @@ def ActionYes():
     messageYes.pack(pady=20)
     
     
-    buttonYes = tk.Button(menuYes, text="Draw Heart ❤️", command=drawheart, width=15)
+    buttonYes = tk.Button(menuYes, text="Draw Heart ❤️", command=drawheart, width=15, cursor="hand2")
     buttonYes.pack(pady=20)
 
-    buttonClose = tk.Button(menuYes, text="Close", command=menuYes.destroy, width=10)
-    buttonClose.pack()
+    buttonClose = tk.Button(menuYes, text="Close", command=menuYes.destroy, width=10, cursor="hand2")
+    buttonClose.pack(pady=20)
 
 #Function to move the menu of the love
 def ActionNo():
+    
     
     screenwide = menuMain.winfo_screenwidth()
     screentall = menuMain.winfo_screenheight()
@@ -76,16 +78,17 @@ def open_menu():
     global menuMain
     menuMain = tk.Toplevel()
     menuMain.title("Jumping Love")
+    menuMain.configure(bg="#FFDEE9")
     menuMain.geometry("")
     menuMain.resizable(False,False)
     
     firstmessage = tk.Label(menuMain, text="You Wanna Be My GirlFriend?", font=("Arial", 14))
     firstmessage.grid(row=0, column=0, sticky="ew", padx=10, pady=5)
     
-    buttonYes = tk.Button(menuMain, text="Yes", command=ActionYes, width=10)
+    buttonYes = tk.Button(menuMain, text="Yes", command=ActionYes, width=10, cursor="hand2")
     buttonYes.grid(row=13, column=1, sticky="ew", padx=10, pady=5)
     
-    buttonNo = tk.Button(menuMain, text="No", command=ActionNo, width=10)
+    buttonNo = tk.Button(menuMain, text="No", command=ActionNo, width=10,  cursor="hand2")
     buttonNo.grid(row=13, column=0, sticky="w", padx=10, pady=5)
 
     menuMain.mainloop()
@@ -102,7 +105,7 @@ rootMain.resizable(False, False)
 messageWelcome = tk.Label(rootMain, text="Welcome To Jumping Love", font=("Arial", 14))
 messageWelcome.pack(pady=20)
 
-buttonStart = tk.Button(rootMain, text="Start", command=open_menu, width=10)
+buttonStart = tk.Button(rootMain, text="Start", command=open_menu, width=10, cursor="hand2")
 buttonStart.pack(pady=20)
 
 groupLabel = tk.Label(rootMain, text="Click Start", anchor='s')
