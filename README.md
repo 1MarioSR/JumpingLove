@@ -19,15 +19,11 @@ Jumping Window of Love is an interactive application developed in Python using t
 '''Bash
 git clone https://github.com/1MarioSR/JumpingLove.git
 
-2.Instala Tkinter si no lo tienes ya:
-"pip install tk"
+2.Install Tkinter if you don't already have it: "pip install tk"
 
-3.Ejecuta el script:
-"python jumping_love.py"
+3. Run the script: "python jumping_love.py"
 
-##Contribuciones
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el proyecto, no dudes en abrir un issue o un pull request.
+## Contribuciones Contributions are welcome! If you have ideas to improve the project, don't hesitate to open an issue or a pull request.
 
-##Licencia
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+## Licencia This project is under the MIT License. See the LICENSE file for details.
 
